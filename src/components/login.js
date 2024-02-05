@@ -13,7 +13,7 @@ const Login = () => {
      
     const login = (e) => {
         e.preventDefault();
-        axios.post("/login", {
+        axios.post("http://localhost:3001/login", {
           email: email,
           password: password,
         })
