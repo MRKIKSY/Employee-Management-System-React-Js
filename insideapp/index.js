@@ -11,10 +11,18 @@ const port = 3001
  
 app.use(express.json());
 app.use(cors());
+// // Enable cors at the server side. 
+// const cors = require('cors')
+// const corsOption = {
+//     origin: ['http://localhost:3001'],
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+// }
+// app.use(cors(corsOption));
  
 const con = mysql.createConnection({
     user: "root",
-    host: "localhost",
+    host: "",
     password: "",
     database: "database"
 })
