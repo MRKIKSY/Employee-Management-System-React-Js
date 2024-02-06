@@ -13,7 +13,7 @@ const Login = () => {
      
     const login = (e) => {
         e.preventDefault();
-        axios.post('/login', {
+        axios.post('https://employee-management-system-react-93s6uslxk-mrkiksys-projects.vercel.app/login', {
           email: email,
           password: password,
         })
